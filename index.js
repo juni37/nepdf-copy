@@ -28,22 +28,8 @@ app.whenReady().then(() => {
             const stream = doc.pipe(fs.createWriteStream(path))
 
             doc.font(join(__dirname, 'src', 'Pretendard.otf')).fontSize(100)
-                .text('해당 PDF는 NEPDF로 제작되었어요.', {
+                .text('Textbook translated through PDF via NEPDF', {
                     top: 100,
-                    left: 100
-                })
-                .text('NEPDF의 개발자 임세훈의 포트폴리오를 확인해 보세요.', {
-                    top: 200,
-                    left: 100,
-                    link: 'https://sh9351.me'
-                })
-                .text('혹은 KTV로 어디서나 실시간 TV를 시청해 보세요.', {
-                    top: 200,
-                    left: 100,
-                    link: 'https://ktv.sh9351.me'
-                })
-                .text('이 프로그램이 유용하셨다면, 숙제 한번만 빼주세요.', {
-                    top: 300,
                     left: 100
                 })
 
